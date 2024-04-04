@@ -6,6 +6,13 @@
 
 .servicePage{
     &__wrapper{
+        @include mediaQuery{
+            .info{ //remove when mobile
+                span{
+                    display: none;
+                }
+            }
+        }
         .thumbnailImg{
             display: block;
             margin-left: auto;
@@ -14,12 +21,6 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
-        .info{ //remove when mobile
-            span{
-                display: none;
-            }
-        }
-        @include mediaQuery{
         .info__wrap{
             position: absolute;
             bottom: 465px;
@@ -47,7 +48,6 @@
             }
         
         }
-    }
         .servicePage__title{
             h2{
                 margin-top: 6rem;

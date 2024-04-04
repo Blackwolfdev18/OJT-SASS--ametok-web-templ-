@@ -15,7 +15,7 @@
   } //rounded side
 
 @mixin mediaQuery($width:$sm){  //$width and sm size is from color
-    @media (min-width:$width){
+    @media (max-width:$width){
         @content; //changed any content
     }
 }
