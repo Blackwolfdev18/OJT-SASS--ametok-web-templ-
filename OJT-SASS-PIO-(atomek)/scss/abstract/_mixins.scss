@@ -19,11 +19,12 @@
         @content; //changed any content
     }
 }
-@mixin mediaQueryMD($width:$md){  //$width and sm size is from color
-    @media (min-width:$width){
-        @content; //changed any content
+@mixin mediaQuery2($width:$md) { //tablet
+    @media (max-width:$width) {
+        @content;
     }
 }
+
 //@include mediaQuery{}
 
 @mixin grid($cols: 1, $gap:1rem){ //for calling grid
